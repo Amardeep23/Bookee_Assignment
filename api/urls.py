@@ -1,6 +1,11 @@
-from gymapp.views import *
-from django.urls import path
+from django.urls import path, include
+from rest_framework.routers import DefaultRouter
+from gymapp.views import GymViewSet
+
+router = DefaultRouter()
+
+router.register(r'gyms', GymViewSet, basename='gym')
 
 urlpatterns = [
-    path('index/', index),
+    path('', include(router.urls)),
 ]
