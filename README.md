@@ -46,7 +46,7 @@ gym
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/gym-management-api.git
+   git clone https://github.com/sachin-404/gym-management-system-api.git
     ```
 2. Create a virtual environment:
     ```
